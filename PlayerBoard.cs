@@ -68,7 +68,7 @@ namespace battleships
         }
         public void ReceiveAttack(Tuple<int, int> point) {
             if (BoardState[point.Item1, point.Item2]) {
-                Console.WriteLine("You've hit a ship!");
+                Console.WriteLine("Hit!");
 
                 BoardState[point.Item1, point.Item2] = false;
                 List<Ship> remainingShips = new List<Ship>(Ships);
@@ -88,7 +88,8 @@ namespace battleships
                 return;
             }
 
-            Console.WriteLine("Attack missed.");
+            Console.WriteLine("Miss");
+            Console.WriteLine("");
         }
     
     }
