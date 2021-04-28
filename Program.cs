@@ -7,9 +7,6 @@ namespace battleships
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.Write(typeof(string).Assembly.ImageRuntimeVersion);
-
             Console.WriteLine("Initialising game...");
             Game game = new Game();
 
