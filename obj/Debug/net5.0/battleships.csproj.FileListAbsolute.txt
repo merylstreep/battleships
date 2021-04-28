@@ -1,0 +1,15 @@
+/Users/harry/proj/battleships/bin/Debug/net5.0/battleships.deps.json
+/Users/harry/proj/battleships/bin/Debug/net5.0/battleships.runtimeconfig.json
+/Users/harry/proj/battleships/bin/Debug/net5.0/battleships.runtimeconfig.dev.json
+/Users/harry/proj/battleships/bin/Debug/net5.0/battleships.dll
+/Users/harry/proj/battleships/bin/Debug/net5.0/ref/battleships.dll
+/Users/harry/proj/battleships/bin/Debug/net5.0/battleships.pdb
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.csprojAssemblyReference.cache
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.GeneratedMSBuildEditorConfig.editorconfig
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.AssemblyInfoInputs.cache
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.AssemblyInfo.cs
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.csproj.CoreCompileInputs.cache
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.dll
+/Users/harry/proj/battleships/obj/Debug/net5.0/ref/battleships.dll
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.pdb
+/Users/harry/proj/battleships/obj/Debug/net5.0/battleships.genruntimeconfig.cache
