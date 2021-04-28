@@ -7,18 +7,6 @@ namespace battleships
     {
         private Boolean[,] BoardState {get; set;}
         public List<Ship> Ships { get; set;}
-        public PlayerBoard(List<Ship> ships, int size) {
-            Boolean[,] board = new bool[size, size];
-
-            foreach (Ship s in ships) {
-                foreach (Tuple<int, int> point in s.ActivePositions) {
-                    board[point.Item1, point.Item2] = true;
-                }
-            }
-    
-            BoardState = board;
-            Ships = ships;
-        }
 
         public PlayerBoard(int size) {
             BoardState = new bool[size, size];
@@ -28,7 +16,6 @@ namespace battleships
         public void AddShip(Ship s) {
             //Check if any position in S conflicts with board
 
-            Console.WriteLine(String.Join(", ", s.ActivePositions));
             foreach (Tuple<int, int> point in s.ActivePositions) {
                 int x = point.Item1;
                 int y = point.Item2;
@@ -61,15 +48,13 @@ namespace battleships
         }
 
         public Boolean IsPlayerActive() {
-            if (Ships.Count > 0) {
-                return true;
-            }
-            return false;
+            return Ships.Count > 0;
         }
         public void ReceiveAttack(Tuple<int, int> point) {
             if (BoardState[point.Item1, point.Item2]) {
                 Console.WriteLine("Hit!");
-
+                Console.WriteLine("");
+                
                 BoardState[point.Item1, point.Item2] = false;
                 List<Ship> remainingShips = new List<Ship>(Ships);
 

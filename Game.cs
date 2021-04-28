@@ -85,15 +85,6 @@ namespace battleships
            } 
            return;
        }
-
-        public void GoNext() {
-           while (CurrentState == GameState.InProgress) {
-               foreach(PlayerBoard player in Players) {
-                   Console.WriteLine("Something is happening");
-                    //    LaunchAttack(player);
-               }
-           }
-       }
        public Ship ProcessShipInput(String s, PlayerBoard p) {
             String[] keys = s.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             int startX = int.Parse(keys[0]);
